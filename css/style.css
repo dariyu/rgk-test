@@ -1,0 +1,197 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  outline: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+strong {
+  font-weight: bold;
+}
+input,
+textarea,
+select {
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  border: 0;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+.clearfix-x:before,
+.clearfix-x:after {
+  content: " ";
+  display: table;
+  width: 100%;
+}
+/* IE6/7 support */
+.clearfix-x {
+  *zoom: 1;
+}
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('../font/openSansLight/g8l8sink-webfont.eot');
+  src: url('../font/openSansLight/g8l8sink-webfont.eot?#iefix') format('embedded-opentype'), url('../font/openSansLight/g8l8sink-webfont.woff2') format('woff2'), url('../font/openSansLight/g8l8sink-webfont.woff') format('woff'), url('../font/openSansLight/g8l8sink-webfont.ttf') format('truetype'), url('../font/openSansLight/g8l8sink-webfont.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url('../font/openSansSemibold/ou92jmyj-webfont.eot');
+  src: url('../font/openSansSemibold/ou92jmyj-webfont.eot?#iefix') format('embedded-opentype'), url('../font/openSansSemibold/ou92jmyj-webfont.woff2') format('woff2'), url('../font/openSansSemibold/ou92jmyj-webfont.woff') format('woff'), url('../font/openSansSemibold/ou92jmyj-webfont.ttf') format('truetype'), url('../font/openSansSemibold/ou92jmyj-webfont.svg#open_sanssemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima_novaextrabold";
+  src: url("../font/proximaNovaBold/ProximaNovaBold.eot");
+  src: url("../font/proximaNovaBold/ProximaNovaBold.eot?#iefix") format("embedded-opentype"), url("../font/proximaNovaBold/ProximaNovaBold.woff") format("woff"), url("../font/proximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.open_sans_light {
+  font-family: 'open_sanslight';
+}
+.open_sans_semibold {
+  font-family: 'open_sanssemibold';
+}
+.proxima_nova_extrabold {
+  font-family: 'proxima_novaextrabold';
+}
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/

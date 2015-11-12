@@ -1,0 +1,26 @@
+.middle{
+  &:after{
+    content: '';
+    width: 0px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.justify{
+  text-align: justify;
+  &:after{
+    content: '';
+    width: 100%;
+    display: inline-block;
+    height: 0;
+  }
+}
+
+.transition(@x){
+  transition: all @x ease;
+}
+
+@desktop: ~"screen and (min-width: 1380px)";
+@tablet: ~"screen and (min-width: 1060px) and (max-width: 1379px)";
+@mobile: ~"screen and (max-width: 1059px)";
