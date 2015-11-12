@@ -1,0 +1,29 @@
+.checkbox{
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+  width: 15px;
+  height: 15px;
+}
+.checkbox + label{
+  cursor: pointer;
+  vertical-align: middle;
+}
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 8px 0 0 50px;
+  display: block;
+}
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  .icon-checkbox;
+}
+.checkbox:checked + label:before {
+  .icon-checkbox-active;
+}

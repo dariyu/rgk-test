@@ -9,33 +9,58 @@
 
     <link rel="icon" type="image/png" href="favicon.png" />
 
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/libs.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="js/jquery-1.11.3.min.js"></script>
 
-    <!--[if lt IE 9]>
-    <script>
-        document.createElement('header');
-        document.createElement('nav');
-        document.createElement('section');
-        document.createElement('article');
-        document.createElement('aside');
-        document.createElement('footer');
-    </script>
-    <![endif]-->
 </head>
 <body>
 
 <header>
-    хедир
+    <div class="inside">
+        <div class="age-limit">12+</div>
+        <a href="/" class="logo"></a>
+    </div>
 </header>
 
-<div class="main">
+<div class="player inside">
 
-</div><!--main-->
+    <div class="player__top-b">
+        <div class="player__video-name">Видео HD</div>
+        <div class="player__top-b__icon-b">
+            <i class="icon icon-clock"></i>
+            <i class="icon icon-share"></i>
+        </div>
+    </div>
+
+    <div class="player__video-b">
+
+        <div class="player__video-panel">
+            <i class="icon icon-b-play"></i>
+            <div class="player__video-panel__text">Просмотров: 14204</div>
+            <span class="button">Отмена</span>
+        </div>
+
+    </div>
+
+    <div class="player__bot-b">
+        <div class="player__progress"><div></div></div>
+        <div class="player__bot-b__panel">
+            <i class="icon icon-play"></i>
+            <i class="icon icon-volume"></i>
+            <div class="player__bot-b__time"><span>0:01</span> /  15:44</div>
+            <i class="icon icon-full"></i>
+        </div>
+    </div>
+
+</div><!--player-->
 
 <footer>
-    футир
+    <div class="inside">
+        <div class="check-b"><input type="checkbox" id="1" class="checkbox"><label for="1">Подтверждаю, что люблю мультики, и соглашаюсь с <a href="#">правилами предоставления услуги</a></label></div>
+        <div class="f-text">Услуга: domainname.eu. Провайдер ООО “Эс Эм Экс Комьюникейшнс”. Стоимость: 20 руб в сутки с НДС. </div>
+    </div>
 </footer>
 
 <script src="js/script.js"></script>

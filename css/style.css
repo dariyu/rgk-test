@@ -195,3 +195,465 @@ Icon classes can be used entirely standalone. They are named after their origina
 <img class="icon-home" />
 ```
 */
+.icon-b-play {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px 0px;
+  width: 451px;
+  height: 192px;
+}
+.icon-b-play320 {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -194px;
+  width: 225px;
+  height: 96px;
+}
+.icon-checkbox-active {
+  background-image: url(../img/spritesheet.png);
+  background-position: -169px -292px;
+  width: 35px;
+  height: 35px;
+}
+.icon-checkbox {
+  background-image: url(../img/spritesheet.png);
+  background-position: -206px -292px;
+  width: 35px;
+  height: 35px;
+}
+.icon-clock {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -357px;
+  width: 45px;
+  height: 45px;
+}
+.icon-clock480 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -358px -257px;
+  width: 22px;
+  height: 22px;
+}
+.icon-full {
+  background-image: url(../img/spritesheet.png);
+  background-position: -66px -292px;
+  width: 55px;
+  height: 44px;
+}
+.icon-full480 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -329px -257px;
+  width: 27px;
+  height: 22px;
+}
+.icon-limit {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -292px;
+  width: 64px;
+  height: 63px;
+}
+.icon-limit480 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -243px -292px;
+  width: 32px;
+  height: 32px;
+}
+.icon-logo {
+  background-image: url(../img/spritesheet.png);
+  background-position: -227px -194px;
+  width: 201px;
+  height: 61px;
+}
+.icon-logo480 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -227px -257px;
+  width: 100px;
+  height: 30px;
+}
+.icon-play {
+  background-image: url(../img/spritesheet.png);
+  background-position: -47px -357px;
+  width: 41px;
+  height: 44px;
+}
+.icon-play480 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -430px -219px;
+  width: 20px;
+  height: 21px;
+}
+.icon-share {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -404px;
+  width: 41px;
+  height: 47px;
+}
+.icon-share480 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -430px -194px;
+  width: 20px;
+  height: 23px;
+}
+.icon-volume {
+  background-image: url(../img/spritesheet.png);
+  background-position: -123px -292px;
+  width: 44px;
+  height: 43px;
+}
+.icon-volume480 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -382px -257px;
+  width: 22px;
+  height: 22px;
+}
+.middle:after {
+  content: '';
+  width: 0px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.justify {
+  text-align: justify;
+}
+.justify:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+  height: 0;
+}
+.checkbox {
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+  width: 15px;
+  height: 15px;
+}
+.checkbox + label {
+  cursor: pointer;
+  vertical-align: middle;
+}
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 8px 0 0 50px;
+  display: block;
+}
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-image: url(../img/spritesheet.png);
+  background-position: -206px -292px;
+  width: 35px;
+  height: 35px;
+}
+.checkbox:checked + label:before {
+  background-image: url(../img/spritesheet.png);
+  background-position: -169px -292px;
+  width: 35px;
+  height: 35px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  background: #2f2f2f;
+  -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+@media screen and (max-width: 640px) {
+  body {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+.inside {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+a {
+  color: white;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.button {
+  display: inline-block;
+  font-size: 28px;
+  line-height: 50px;
+  background: #000000;
+  color: white;
+  padding: 0 20px;
+  border: 2px solid #8e9195;
+  border-radius: 10px;
+}
+@media screen and (max-width: 640px) {
+  .button {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+header {
+  height: 88px;
+  background: #363636;
+  background: -webkit-linear-gradient(top, #363636 0%, #363636 50%, #2f2f2f 50%, #2f2f2f 100%);
+  background: linear-gradient(to bottom, #363636 0%, #363636 50%, #2f2f2f 50%, #2f2f2f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#363636', endColorstr='#2f2f2f', GradientType=0);
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 640px) {
+  header {
+    height: 50px;
+  }
+}
+.age-limit {
+  display: inline-block;
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -292px;
+  width: 64px;
+  height: 63px;
+  font-size: 26px;
+  line-height: 64px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 12px;
+  left: 18px;
+}
+@media screen and (max-width: 640px) {
+  .age-limit {
+    top: 10px;
+    background-image: url(../img/spritesheet.png);
+    background-position: -243px -292px;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+  }
+}
+.logo {
+  display: inline-block;
+  margin: 15px 0 0 0;
+  background-image: url(../img/spritesheet.png);
+  background-position: -227px -194px;
+  width: 201px;
+  height: 61px;
+}
+@media screen and (max-width: 640px) {
+  .logo {
+    margin: 10px 0 0 0;
+    background-image: url(../img/spritesheet.png);
+    background-position: -227px -257px;
+    width: 100px;
+    height: 30px;
+  }
+}
+footer {
+  background: #2f2f2f;
+  padding: 22px 0;
+  color: #a4a4a4;
+}
+@media screen and (max-width: 640px) {
+  footer {
+    padding: 10px 0;
+  }
+}
+footer .inside {
+  padding: 0 20px;
+}
+.check-b {
+  margin: 0 0 17px 0;
+}
+.player {
+  position: relative;
+  color: white;
+}
+.player__top-b {
+  height: 105px;
+  background: url("../img/ptb.png") repeat-x;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 36px 0 0 0;
+}
+@media screen and (max-width: 640px) {
+  .player__top-b {
+    height: 46px;
+    padding: 16px 0 0 0;
+  }
+}
+.player__top-b__icon-b {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+}
+@media screen and (max-width: 640px) {
+  .player__top-b__icon-b {
+    top: 10px;
+  }
+}
+.player__top-b__icon-b .icon {
+  margin: 0 20px 0 0;
+}
+.player__top-b__icon-b .icon:last-child {
+  margin: 0;
+}
+@media screen and (max-width: 640px) {
+  .player__top-b__icon-b .icon-clock {
+    background-image: url(../img/spritesheet.png);
+    background-position: -358px -257px;
+    width: 22px;
+    height: 22px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .player__top-b__icon-b .icon-share {
+    background-image: url(../img/spritesheet.png);
+    background-position: -430px -194px;
+    width: 20px;
+    height: 23px;
+  }
+}
+.player__video-name {
+  font-size: 30px;
+  line-height: 32px;
+  padding: 0 150px 0 35px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media screen and (max-width: 640px) {
+  .player__video-name {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0 110px 0 20px;
+  }
+}
+.player__bot-b {
+  background: #000000;
+  padding: 10px;
+}
+.player__bot-b__panel {
+  padding: 20px 28px 14px;
+}
+@media screen and (max-width: 640px) {
+  .player__bot-b__panel {
+    padding: 10px 20px 5px;
+  }
+}
+.player__bot-b__panel .icon {
+  margin: 0 40px 0 0;
+}
+@media screen and (max-width: 640px) {
+  .player__bot-b__panel .icon {
+    margin: 0 20px 0 0;
+  }
+}
+.player__bot-b__panel .icon-full {
+  margin: 0;
+  float: right;
+}
+@media screen and (max-width: 640px) {
+  .player__bot-b__panel .icon-full {
+    background-image: url(../img/spritesheet.png);
+    background-position: -329px -257px;
+    width: 27px;
+    height: 22px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .player__bot-b__panel .icon-play {
+    background-image: url(../img/spritesheet.png);
+    background-position: -430px -219px;
+    width: 20px;
+    height: 21px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .player__bot-b__panel .icon-volume {
+    background-image: url(../img/spritesheet.png);
+    background-position: -382px -257px;
+    width: 22px;
+    height: 22px;
+  }
+}
+.player__bot-b__time {
+  display: inline-block;
+  vertical-align: middle;
+}
+.player__bot-b__time span {
+  color: #bababa;
+}
+.player__progress {
+  height: 8px;
+  background: #626262;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.player__progress > div {
+  width: 30%;
+  height: 100%;
+  background: #ec0623;
+}
+.player__video-b {
+  background: url("../img/video-back.jpg") no-repeat center center;
+  background-size: cover;
+}
+.player__video-b:after {
+  content: '';
+  width: 0px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.player__video-b.active {
+  background-image: url("../img/video-back-active.jpg");
+}
+.player__video-b.active .player__video-panel {
+  display: none;
+}
+.player__video-panel {
+  padding: 105px 0 10px 0;
+  text-align: center;
+  display: inline-block;
+  width: 97%;
+  vertical-align: middle;
+}
+@media screen and (max-width: 640px) {
+  .player__video-panel {
+    padding: 50px 0 10px 0;
+  }
+}
+.player__video-panel .icon-b-play {
+  cursor: pointer;
+}
+@media screen and (max-width: 640px) {
+  .player__video-panel .icon-b-play {
+    background-image: url(../img/spritesheet.png);
+    background-position: 0px -194px;
+    width: 225px;
+    height: 96px;
+  }
+}
+.player__video-panel__text {
+  color: #bababa;
+  padding: 17px 0 43px;
+}
+@media screen and (max-width: 640px) {
+  .player__video-panel__text {
+    padding: 5px 0 10px 0;
+  }
+}
