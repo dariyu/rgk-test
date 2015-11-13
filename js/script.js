@@ -4,40 +4,46 @@ var App = {};
 
 App.player = function(){
     var el = {
-            player: '.player__video-b',
-            play: '.icon-b-play',
-            check: '.checkbox',
-            video_b: '.player__video-b'
+            player: 'video',
+            panel: 'p-b-panel',
+            play: 'play',
+            check: 'checkbox'
         },
         render = function(){
             playerHeight();
-            $(window).resize(function(){ playerHeight(); });
+            window.onresize = function(){
+                playerHeight();
+            };
             playClick();
         },
         playerHeight = function(){
-            var this_height = $(window).height() - $('header').innerHeight() - $('footer').innerHeight() - $('.player__bot-b').innerHeight();
-            if ($(window).height() < 480){
-                this_height = $(window).height() - $('.player__bot-b').innerHeight();
+            var win_height = window.innerHeight,
+                head_heigth = document.getElementsByTagName('header')[0].offsetHeight,
+                foot_height = document.getElementsByTagName('footer')[0].offsetHeight,
+                panel_height = document.getElementsByClassName(el.panel)[0].offsetHeight,
+                this_height;
+            if (window.screen.orientation.angle != 0 && win_height < 420){
+                this_height = win_height - panel_height;
+                document.getElementById(el.player).style.height = this_height + 'px';
             }
-            $(el.player).css({
-                'height': this_height
-            });
+            else{
+                this_height = win_height - head_heigth - foot_height - panel_height;
+                document.getElementById(el.player).style.height = this_height + 'px';
+            }
         },
         playClick = function(){
-            $(document).on('click', el.play, function(){
-                if ($(el.check).prop('checked')){
-                    $(el.video_b).addClass('active');
+            document.getElementById(el.play).onclick = function(){
+                if (document.getElementById(el.check).checked){
+                    document.getElementById(el.player).classList.add("active");
                 }
                 else{
                     alert('Согласитесь с правилами');
                 }
-            });
+            };
         };
     render();
 };
 
-$(function(){
-
+window.onload = function(){
     App.player();
-
-});
+};

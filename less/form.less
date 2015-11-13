@@ -14,16 +14,19 @@
 }
 .checkbox:not(checked) + label {
   position: relative;
-  padding: 8px 0 0 50px;
+  padding: 2px 0 0 30px;
   display: block;
 }
 .checkbox:not(checked) + label:before {
   content: '';
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 0;
-  .icon-checkbox;
+  background: url("../img/checkbox.png") no-repeat;
+  background-size: 100% 100%;
+  width: 20px;
+  height: 20px;
 }
 .checkbox:checked + label:before {
-  .icon-checkbox-active;
+  background-image: url("../img/checkbox-active.png");
 }

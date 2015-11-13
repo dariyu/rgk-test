@@ -5,14 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
 
-    <title>lgpol</title>
+    <title>rgk-test</title>
 
     <link rel="icon" type="image/png" href="favicon.png" />
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/libs.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="js/jquery-1.11.3.min.js"></script>
 
 </head>
 <body>
@@ -20,46 +18,34 @@
 <header>
     <div class="inside">
         <div class="age-limit">12+</div>
-        <a href="/" class="logo"></a>
+        <a href="/" class="logo">vidos <span>tube</span></a>
     </div>
 </header>
 
-<div class="player inside">
-
-    <div class="player__top-b">
-        <div class="player__video-name">Видео HD</div>
-        <div class="player__top-b__icon-b">
-            <i class="icon icon-clock"></i>
-            <i class="icon icon-share"></i>
-        </div>
-    </div>
-
-    <div class="player__video-b">
-
-        <div class="player__video-panel">
-            <i class="icon icon-b-play"></i>
-            <div class="player__video-panel__text">Просмотров: 14204</div>
+<div class="player-b inside">
+    <div class="p-t-panel">Видосик<div class="p-t-panel__icons"><i class="icon icon-clock"></i><i class="icon icon-share"></i></div></div>
+    <div class="p-video-b" id="video">
+        <div class="p-video-b__nav">
+            <div class="play" id="play">Плей<i class="icon icon-play-b"></i></div>
+            <div class="p-video-b__text">Просмотров: 14204</div>
             <span class="button">Отмена</span>
         </div>
-
     </div>
-
-    <div class="player__bot-b">
-        <div class="player__progress"><div></div></div>
-        <div class="player__bot-b__panel">
-            <i class="icon icon-play"></i>
-            <i class="icon icon-volume"></i>
-            <div class="player__bot-b__time"><span>0:01</span> /  15:44</div>
-            <i class="icon icon-full"></i>
-        </div>
+    <div class="p-b-panel">
+        <div class="progressbar"><div></div></div>
+        <i class="icon icon-play p-b-panel__item"></i>
+        <i class="icon icon-volume p-b-panel__item"></i>
+        <div class="time-progress p-b-panel__item"><span>0:01</span> /  15:44</div>
+        <i class="icon icon-full p-b-panel__item"></i>
     </div>
-
-</div><!--player-->
+</div><!--player-b-->
 
 <footer>
     <div class="inside">
-        <div class="check-b"><input type="checkbox" id="1" class="checkbox"><label for="1">Подтверждаю, что люблю мультики, и соглашаюсь с <a href="#">правилами предоставления услуги</a></label></div>
-        <div class="f-text">Услуга: domainname.eu. Провайдер ООО “Эс Эм Экс Комьюникейшнс”. Стоимость: 20 руб в сутки с НДС. </div>
+        <div class="f-check-b">
+            <input type="checkbox" class="checkbox" id="checkbox"><label for="checkbox">Подтверждаю, что люблю мультики, и соглашаюсь с <a href="#">правилами предоставления услуги</a></label>
+        </div>
+        <div class="f-text">Услуга: domainname.eu. Провайдер ООО “Эс Эм Экс Комьюникейшнс”.</div>
     </div>
 </footer>
 
